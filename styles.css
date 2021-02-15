@@ -43,7 +43,8 @@ html{
     margin-bottom: 10px;
 }
 .time-bar .bar{
-    width: 50%;
+    transition: .5s;
+    width: 0%;
     height: 100%;
     border-radius: inherit;
     background: linear-gradient(to right, #8eeeff, #65c7f7, #0052d4);
@@ -51,8 +52,15 @@ html{
 .buttons{
     margin-top: 20px;
 }
-.toggleButton{
-
+.buttons button{
+    border: none;
+    outline: none;
     height: 80px;
     width: 80px;
+}
+.play{
+    background: url('./assets/play.png') center / cover no-repeat;
+}
+.pause{
+    background: url('./assets/pause.png') center / cover no-repeat;
 }
