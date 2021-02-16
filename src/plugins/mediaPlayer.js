@@ -17,6 +17,12 @@ class MediaPlayer{
             this.media.pause()
         }
     }
+    advance(){
+        
+    }
+    delay(){
+        this.media.currentTime -= 15
+    }
 }
 
 export default MediaPlayer

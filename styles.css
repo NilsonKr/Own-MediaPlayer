@@ -50,11 +50,16 @@ html{
     background: linear-gradient(to right, #8eeeff, #65c7f7, #0052d4);
 }
 .buttons{
+    display: flex;
+    align-items: center;
     margin-top: 20px;
 }
 .buttons button{
+    margin: 0 5px ;
     border: none;
     outline: none;
+}
+.toggle{
     height: 80px;
     width: 80px;
 }
@@ -63,4 +68,9 @@ html{
 }
 .pause{
     background: url('./assets/pause.png') center / cover no-repeat;
+}
+.secondsBtn{
+    width: 50px;
+    height: 50px;
+    background: url('./assets/15seconds.png') center / cover no-repeat;
 }
