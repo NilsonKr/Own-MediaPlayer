@@ -8,6 +8,7 @@ const video = document.querySelector('#video')
 const delayBtn = document.querySelector('#delay')
 const advance = document.querySelector('#advance')
 
+
 const mediaPlayer = new MediaPlayer({ media: video , barTime: bar, plugins: [new BarUpdate()]})
 
 btn.onclick = function(){
@@ -17,9 +18,17 @@ btn.onclick = function(){
 }
 
 function skip (){
-    console.log(this.dataset.skip)
-    video.currentTime += parseFloat(this.dataset.skip)
+    const time =   video.currentTime + parseFloat(this.dataset.skip)
+    /*     const src = video.src 
+    video.src = ''
+    video.src = src */
+    video.currentTime = time.toFixed()
+
+    console.log(video.currentTime)
+    console.log(time)
 }
 
 delayBtn.addEventListener('click', skip)
 advance.addEventListener('click', skip)
+
+
