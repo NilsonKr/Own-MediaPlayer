@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.media-container{
+    background: mediumseagreen;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-container{
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.438);
+    margin-bottom: 20px;
+}
+.video-container video{
+    width: 100%;
+    vertical-align: top;
+}
+.controls-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+.time-bar{
+    width: 100%;
+    height: 15px;
+    background: rgb(201, 201, 201);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.time-bar .bar{
+    transition: .5s;
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(to right, #8eeeff, #65c7f7, #0052d4);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttons button{
+    margin: 0 5px ;
+    border: none;
+    outline: none;
+}
+.toggle{
+    height: 80px;
+    width: 80px;
+}
+.play{
+    background: url('./assets/play.png') center / cover no-repeat;
+}
+.pause{
+    background: url('./assets/pause.png') center / cover no-repeat;
+}
+.secondsBtn{
+    width: 50px;
+    height: 50px;
+    background: url('./assets/15seconds.png') center / cover no-repeat;
+}
